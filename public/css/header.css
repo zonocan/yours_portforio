@@ -133,8 +133,9 @@ header {
 }
 
 .header_ui_btn img {
-  height: 25px;
+  height: 2.5vh;
   width: 100%;
+  margin-top: 0.5vh;
 }
 
 .header_ui_btn img:hover {
@@ -150,7 +151,7 @@ header {
 }
 
 /* ヘッダーのレスポンシブ */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .logo_cover {
     clip-path: polygon(-2000% 100%, 17.5% 0%, 100% 0%, 70% 100%);
   }
@@ -178,8 +179,8 @@ header {
 
   .header_ui_btn img {
     width: 50%;
-    height: 18px;
-    margin-top: 3px;
+    height: 15px;
+    margin-top: 5px;
   }
 
   .header_btn_line {
