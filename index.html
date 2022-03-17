@@ -7,52 +7,54 @@
   <!-- レスポンシブデザイン -->
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <!-- -->
-  <link rel="stylesheet" type="text/css" href="public/css/header.css">
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
   <!-- 写真のスライドのcss -->
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <!-- -->
-  <link rel="stylesheet" type="text/css" href="public/css/base.css">
+  <link rel="stylesheet" type="text/css" href="public/css/style.css">
+  <link rel="stylesheet" type="text/css" href="public/css/footer.css">
   <!-- 写真のスライドのjs -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <!-- -->
   <script type="text/javascript" src="public/js/slick.js"></script>
   <script type="text/javascript" src="public/js/text_display.js"></script>
+  <script type="text/javascript" src="public/js/like.js"></script>
+  <script type="text/javascript" src="public/js/footer.js"></script>
 </head>
 
 <body>
   <header>
-    <div class="logo_cover">
-      <img src="public/ui_img/logo.png">
-    </div>
-    <div class="header_serach_area">
-      <form method="post" class="serach_box">
-        <label>
-          <input type="text" name="serach" class="textbox">
-        </label>
-        <input type="submit" name="header_search_btn" value="検索" class="header_search_btn">
-      </form>
-    </div>
-    <div class="header_ui_btns">
-      <a href="#" class="header_ui_btn" id="category_index_btn">
-        <img src="public/ui_img/serrch_2.png">
-      </a>
-      <a href="#" class="header_ui_btn">
-        <img src="public/ui_img/header_purchased_btn.png">
-      </a>
-      <a href="#" class="header_ui_btn">
-        <img src="public/ui_img/header_like_btn.png">
-      </a>
-      <a href="#" class="header_ui_btn" id="header_DM_btn">
-        <img src="public/ui_img/header_DM_btn.png">
-      </a>
-      <a href="#" class="header_ui_btn">
-        <img src="public/ui_img/logout.gif">
-      </a>
+    <div class="row">
+      <div class="col-3 p-2 d-flex justify-content-center left">
+        <img src="public/ui_img/logo.png" class="logo">
+      </div>
+      <div class="col-md-4 p-2 d-flex justify-content-center d-none d-md-block header_search_area">
+        <form method="post mx-2">
+          <label class="mx-4">
+            <textarea></textarea>
+          </label>
+          <input type="submit" name="header_search_btn" value="検索">
+        </form>
+      </div>
+      <div class="col-1 d-md-none d-block"></div>
+      <span class="col-1 p-2">
+        <img src="public/ui_img/serrch_2.png" class="header_ui_btn mt-1">
+      </span>
+      <span class="col-1 p-2">
+        <img src="public/ui_img/header_purchased_btn.png" class="header_ui_btn mt-1">
+      </span>
+      <span class="col-1 p-2">
+        <img src="public/ui_img/header_like_btn.png" class="header_ui_btn mt-1">
+      </span>
+      <span class="col-1 p-2">
+        <img src="public/ui_img/header_DM_btn.png" class="header_ui_btn mt-1">
+      </span>
+      <span class="col-1 p-2">
+        <img src="public/ui_img/logout.gif" class="header_ui_btn mt-1">
+      </span>
     </div>
   </header>
   <div class="container screen">
@@ -77,12 +79,14 @@
           </div>
           <div class="col-9 d-inline-flex mt-2 bd-highlight">
             <p class="h3 mx-1">
+              <!-- @の読み込み -->
               <strong>
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-at" viewBox="0 0 16 16">
                   <path
                     d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z" />
                 </svg>
               </strong>
+              <!-- ここまで -->
             </p>
             <p class="h3">
               <strong>zonocan</strong>
@@ -171,6 +175,50 @@
       </article>
     </div>
   </div>
+  <footer class="d-md-none p-1 d-block d-flex justify-content-center">
+    <div class="row inner">
+      <!-- 余白分 -->
+        <div class="col-1 mx-2"></div>
+      <!-- -->
+      <span class="col-1 mt-1 d-flex flex-column justify-content-center">
+        <img src="public/ui_img/home_btn.png" class="footer_ui_btn" id="footer_ui_home_btn">
+        <!-- javascriptの表示する要素-->
+        <div class="footer_ui_home_btn footer_btn_line"></div>
+      </span>
+      <!-- 余白分 -->
+        <div class="col-1 p-0"></div>
+      <!-- -->
+      <span class="col-1 mt-1 d-flex flex-column justify-content-center">
+        <img src="public/ui_img/search_btn.png" class="footer_ui_btn" id="footer_ui_search_btn">
+        <!-- javascriptの表示する要素-->
+        <div class="footer_ui_search_btn footer_btn_line"></div>
+      </span>
+      <!-- 余白分 -->
+        <div class="col-1"></div>
+      <!-- -->
+      <span class="col-1 mt-1 flex d-flex flex-column justify-content-center">
+        <img src="public/ui_img/keep_btn.png" class="footer_ui_btn" id="footer_ui_keep_btn">
+        <!-- javascriptの表示する要素-->
+        <div class="footer_ui_keep_btn footer_btn_line"></div>
+      </span>
+      <!-- 余白分 -->
+        <div class="col-1"></div>
+      <!-- -->
+      <span class="col-1 mt-1 d-flex flex-column justify-content-center">
+        <img src="public/ui_img/cart_btn.png" class="footer_ui_btn" id="footer_ui_cart_btn">
+        <!-- javascriptの表示する要素-->
+        <div class="footer_ui_cart_btn footer_btn_line"></div>
+      </span>
+      <!-- 余白分 -->
+        <div class="col-1"></div>
+      <!-- -->
+      <span class="col-1 mt-1 d-flex flex-column justify-content-center">
+        <img src="public/profeal_img/profeal.JPG" class="footer_profel footer_ui_btn" id="profeal_btn">
+        <!-- javascriptの表示する要素-->
+        <div class="profeal_btn footer_btn_line mx-2"></div>
+      </span>
+    </div>
+  </footer>
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
