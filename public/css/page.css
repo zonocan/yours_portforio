@@ -105,18 +105,23 @@ header{
 /* ここまで(ヘッダー) */
 
 /* プロフィール部分 */
+.user {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .user_info {
-  margin: 70px 0 50px 0;
+  margin: 60px auto;
 }
 
 .page_profeal_file {
-  height: 70px;
+  height: 60px;
   border-radius: 50%;
 }
 
 .page_btn {
   height: 30px;
-  width: 25%;
+  width: 12%;
   background-color: #04e3d0;
   color: white;
   font-weight: bold;
@@ -135,18 +140,30 @@ header{
   margin: 0;
 }
 
+.main_contents {
+  margin-bottom: 200px;
+}
+
+.side_nav_btn {
+  margin-top: 10px;
+}
+
+.side_nav_cover {
+  margin: 10px 10% 100px 0;
+}
+
 .reviews {
-  width: 55%;
+  width: 60%;
   margin: 0 5% 0 40%;
 }
 
-.review {
-  border: solid 1px black;
-  margin: 100px 0 100px 0;
+.articles {
+  margin: 10px 0 50px 0;
 }
 
 section{
-  height: 50px;
+  height: 25px;
+  border: #000 solid 0.5px;
 }
 
 .profeal_file{
@@ -154,12 +171,19 @@ section{
   border-radius: 50%;
 }
 
+.review_file_cover {
+  max-height: 300px;
+  border: 0.5px solid #000;
+}
+
+.review_file {
+  width: 100%;
+}
+
 
 
 /* ヘッダー部分のコーディング */
 @media(max-width: 768px) {
-
-
 
   .logo{
     width: 50%;
@@ -169,6 +193,16 @@ section{
     height: 17px;
   }
 
+  .user {
+    width: 100%;
+    margin: 0px 0 10px 0;
+  }
+
+  .review_file {
+    height: 150px;
+    width: 100%;
+  }
+
 
 }
 
@@ -176,14 +210,18 @@ section{
 @media (max-width: 768px){
 
   .page_btn {
-    height: 30px;
     width: 25%;
-    background-color: #04e3d0;
-    color: white;
-    font-weight: bold;
-    border: none;
     border-radius: 5%;
     margin:20px 0 20px 0;
+  }
+
+  .reviews{
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .articles {
+    margin: 0;
   }
 
 }
@@ -191,8 +229,10 @@ section{
 /* スマホの表示 */
 @media (max-width: 600px){
 
-  .reviews {
-    flex-direction: column;
+
+  .reviews{
+    width: 90%;
+    margin: 20px auto;
   }
 
   .review{

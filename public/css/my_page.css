@@ -72,10 +72,6 @@ header{
   clip-path: polygon(-2000% 100%, 17.5% 0%, 82.5% 0%, 100% 100%);
 }
 
-.logo{
-  width: 25%;
-  height: 25px;
-}
 
 .navbar {
   height: 50px;
@@ -108,31 +104,66 @@ header{
 
 /* ここまで(ヘッダー) */
 
+/* プロフィール部分 */
+.user {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.user_info {
+  margin: 60px auto;
+}
+
+.page_profeal_file {
+  height: 60px;
+  border-radius: 50%;
+}
+
+.page_btn {
+  height: 30px;
+  width: 12%;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5%;
+  margin:20px 0 20px 0;
+}
+
+.follow_btn.followed {
+  background-color: #90000e;
+}
+
+
 /* コンテイナー */
 .container {
   margin: 0;
 }
 
+.main_contents {
+  margin-bottom: 200px;
+}
+
 .side_nav_btn {
-  margin-top: 100px;
+  margin-top: 10px;
 }
 
 .side_nav_cover {
-  margin: 100px 10% 100px 0;
+  margin: 10px 10% 100px 0;
 }
 
 .reviews {
-  width: 55%;
+  width: 60%;
   margin: 0 5% 0 40%;
 }
 
-.review {
-  border: solid 1px black;
-  margin: 100px 0 100px 0;
+.articles {
+  margin: 10px 0 50px 0;
 }
 
 section{
-  height: 50px;
+  height: 25px;
+  border: #000 solid 0.5px;
 }
 
 .profeal_file{
@@ -140,98 +171,36 @@ section{
   border-radius: 50%;
 }
 
-.border_line{
-  height: 0.5px;
-  background-color: black;
+.review_file_cover {
+  max-height: 300px;
+  border: 0.5px solid #000;
 }
 
-
-.review_img_list img{
+.review_file {
   width: 100%;
 }
 
-.review_img_list img:hover{
-  opacity: 0.5;
-}
 
-.review_ui {
-  height: 24px;
-}
-
-.review_ui:hover {
-  opacity: 0.5;
-}
-
-.icon_ui{
-  height: 24px;
-}
-
-.ui_area {
-  height: 40px;
-}
-
-.fa-heart:before {
-  content: "\f004";
-  font-size: 27px;
-}
-
-.fa-heart:hover{
-  opacity: 0.5;
-}
-
-.like_toggle.liked{
-  color: #90000e;
-}
-
-.fa-comment-dots:before {
-  content: "\f4ad";
-  font-size: 27px;
-}
-
-.fa-comment-dots:hover{
-  opacity: 0.5;
-}
-
-.text_area{
-  background-color: #f1f1f1;
-  display: none;
-}
-
-.btn_area{
-  background-color: #f1f1f1;
-}
-
-/* 投稿の内容を表示するボタン */
-.display_btn {
-  width: 30%;
-  height: 20px;
-  font-size: 20px;
-  background-color: #f1f1f1;
-  color: #90000e;
-  border: none;
-}
-
-.display_btn:hover {
-  opacity: 0.5;
-}
-
-.display_btn_inner {
-  width: 100%;
-}
 
 /* ヘッダー部分のコーディング */
 @media(max-width: 768px) {
 
-  .left_side{
-    clip-path: polygon(-2000% 100%, 17.5% 0%, 100% 0%, 70% 100%);
-  }
-
   .logo{
-    width: 40%;
+    width: 50%;
   }
 
   .header_ui_btn{
     height: 17px;
+  }
+
+  .user {
+    width: 100%;
+    margin: 0px 0 10px 0;
+  }
+
+  .review_file {
+    height: 150px;
+    width: 100%;
   }
 
 
@@ -240,42 +209,30 @@ section{
 /* タブレッドの表示 */
 @media (max-width: 768px){
 
+  .page_btn {
+    width: 25%;
+    border-radius: 5%;
+    margin:20px 0 20px 0;
+  }
 
   .reviews{
-    width: 95%;
+    width: 90%;
     margin: 20px auto;
   }
 
-  .display_btn{
-    width: 40%;
+  .articles {
+    margin: 0;
   }
-
-  .review_ui {
-    height: 18px;
-  }
-
-  .fa-heart:before {
-    content: "\f004";
-    font-size: 20px;
-  }
-
-  .fa-comment-dots:before {
-    content: "\f4ad";
-    font-size: 20px;
-  }
-
-  .icon_ui{
-    height: 18px;
-  }
-
 
 }
 
 /* スマホの表示 */
 @media (max-width: 600px){
 
-  .reviews {
-    flex-direction: column;
+
+  .reviews{
+    width: 90%;
+    margin: 20px auto;
   }
 
   .review{

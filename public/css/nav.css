@@ -3,18 +3,16 @@
   height: 420px;
   background-color: black;
   opacity: 0.9;
-  margin-top: 100px;
   position: fixed;
   clip-path: polygon(0% 100%, 0% 0%, 100% 15%, 100% 85%);
 }
 
 
 .side_nav_cover{
-  width: 30%;
-  height: 450px;
+  width: 25%;
+  height: 400px;
   background-color: #000;
   position: fixed;
-  margin: 100px 10% 100px 0;
 }
 
 .side_nav_cover.none {
@@ -30,7 +28,7 @@
 }
 
 .var_ui_btn {
-  height: 20px;
+
   width: 30px;
 }
 

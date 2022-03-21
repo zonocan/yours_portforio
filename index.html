@@ -14,6 +14,7 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <!-- -->
   <link rel="stylesheet" type="text/css" href="public/css/style.css">
+  <link rel="stylesheet" type="text/css" href="public/css/slider.css">
   <link rel="stylesheet" type="text/css" href="public/css/nav.css">
   <link rel="stylesheet" type="text/css" href="public/css/footer.css">
   <!-- 写真のスライドのjs -->
@@ -34,12 +35,7 @@
         <img src="public/ui_img/logo.png" class="mt-2 logo">
       </div>
       <!-- パソコン画面 -->
-      <form class="col-3 p-2 gx-2 d-flex d-none d-md-block">
-        <div class="col-auto mx-2">
-          <input class="form-contorol mr-sm-2 mx-2" type="search">
-          <button class="btn btn-light my-2 my-sm-0" type="submit">検索</button>
-        </div>
-      </form>
+      <div class="col-3 d-none d-md-block"></div>
       <div class="col-5 d-none d-md-block d-flex inline-box p-0">
         <ul class="navbar nav p-0 m-0">
           <li class="nav-item active p-0 mx-1">
@@ -112,7 +108,7 @@
   <div class="container d-flex p-0">
     <!-- pcでのみ表示 -->
     <div class="row d-none d-md-block side_nav_btn"></div>
-    <div class="row d-none  d-md-block p-0 side_nav_cover">
+    <div class="row d-none d-md-block p-0 side_nav_cover">
       <button class="d-flex justify-content-center mt-2 p-0 close_side_nav_btn">×</button>
       <nav class="navbar">
         <div class="container-fluid">
@@ -176,9 +172,11 @@
               <strong>zonocan</strong>
             </p>
           </div>
-          <span class="col-2 mt-3 review_ui">
-            <img src="public/ui_img/humberger.png" class="review_ui">
-          </span>
+          <nav class="nav-item col-1 mt-2 review_ui">
+            <a class="nav-link">
+              <img src="public/ui_img/humberger.png" class="review_ui">
+            </a>
+          </nav>
         </section>
         <div class="col-12 border_line"></div>
         <section class="row p-2 d-frex">
@@ -194,7 +192,7 @@
             <p class="h3">5</p>
           </div>
         </section>
-        <div class="col-12 p-0">
+        <div class="col-12 p-0 slider-area">
           <ul class="slider review_imgs_area">
             <li class="review_img_list">
               <a href="#">
@@ -218,7 +216,6 @@
             </li>
           </ul>
         </div>
-        <div class="col-12 border_line"></div>
         <section class="row p-2 ui_area">
           <div class="col-4 d-inline-flex">
             <p class="h3 mx-1">¥</p>
