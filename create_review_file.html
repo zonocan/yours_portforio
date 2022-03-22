@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <!-- -->
-  <link rel="stylesheet" type="text/css" href="public/css/my_page.css">
+  <link rel="stylesheet" type="text/css" href="public/css/create_review_file.css">
   <link rel="stylesheet" type="text/css" href="public/css/nav.css">
   <link rel="stylesheet" type="text/css" href="public/css/footer.css">
   <!-- 写真のスライドのjs -->
@@ -21,6 +21,7 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <!-- -->
   <script type="text/javascript" src="public/js/nav.js"></script>
+  <script type="text/javascript" src="public/js/review_file.js"></script>
   <script type="text/javascript" src="public/js/footer.js"></script>
 </head>
 
@@ -40,8 +41,9 @@
           <strong>zonocan</strong>
         </p>
       </div>
+      <div class="col-1 d-none d-md-block "></div>
       <div class="col-3 d-none d-md-block"></div>
-      <div class="col-5 d-none d-md-block d-flex inline-box p-0">
+      <div class="col-3 d-none d-md-block d-flex inline-box p-0">
         <ul class="navbar p-0 m-0">
           <li class="nav-item active p-0">
             <a class="nav-link p-0 d-flex" href="#">
@@ -53,8 +55,8 @@
           </li>
           <li class="nav-item p-0">
             <a class="nav-link d-flex p-0" href="#">
-              <img src="public/ui_img/contribute_btn.png" class="header_ui_btn mt-1 mx-2">
-              投稿
+              <img src="public/ui_img/header_like_btn.png" class="header_ui_btn mt-1 mx-2">
+              いいね
             </a>
           </li>
           <li class="nav-item p-0">
@@ -63,23 +65,11 @@
               メール
             </a>
           </li>
-          <li class="nav-item p-0">
-            <a class="nav-link d-flex p-0" href="#">
-              <img src="public/ui_img/header_like_btn.png" class="header_ui_btn mt-1 mx-2">
-              いいね
-            </a>
-          </li>
-          <li class="nav-item p-0">
-            <a class="nav-link d-flex p-0" href="#">
-              <img src="public/ui_img/logout.gif" class="header_ui_btn mt-1 mx-2">
-              ログアウト
-            </a>
-          </li>
         </ul>
       </div>
       <!-- スマホ画面 -->
-      <div class="col-2 d-md-none"></div>
-      <ul class="d-md-none navbar col-5 d-flex justify-content-center p-0">
+      <div class="col-3 d-md-none"></div>
+      <ul class="d-md-none navbar col-3 d-flex justify-content-center p-0">
         <li class="nav-item active mx-2">
           <a class="nav-link p-0" href="#">
             <span class="vidually-hidden">
@@ -89,7 +79,7 @@
         </li>
         <li class="nav-item mx-2">
           <a class="nav-link p-0" href="#">
-            <img src="public/ui_img/contribute_btn.png" class="header_ui_btn mt-1">
+            <img src="public/ui_img/header_like_btn.png" class="header_ui_btn mt-1">
           </a>
         </li>
         <li class="nav-item mx-2">
@@ -97,58 +87,9 @@
             <img src="public/ui_img/header_DM_btn.png" class="header_ui_btn mt-1">
           </a>
         </li>
-        <li class="nav-item mx-2">
-          <a class="nav-link p-0" href="#">
-            <img src="public/ui_img/header_like_btn.png" class="header_ui_btn mt-1">
-          </a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="nav-link p-0" href="#">
-            <img src="public/ui_img/logout.gif" class="header_ui_btn mt-1">
-          </a>
-        </li>
       </ul>
     </div>
   </header>
-  <div class="container">
-    <div class="row border-bottom user">
-      <nav class="navbar navbar-light user_info">
-        <div class="navbar-brand col-1">
-          <img src="public/profeal_img/profeal.JPG" class="page_profeal_file mx-3">
-        </div>
-        <div class="col-2 col-md-1"></div>
-        <ul class="navbar-nav col-2">
-          <li class="nav-item active p-0">
-            <a class="nav-link p-0 d-flex" href="#">投稿</a>
-          </li>
-          <p class="h6">3</p>
-        </ul>
-        <ul class="navbar-nav col-3">
-          <li class="nav-item active p-0">
-            <a class="nav-link p-0 d-flex" href="#">フォロワー</a>
-          </li>
-          <p class="h6">100</p>
-        </ul>
-        <ul class="navbar-nav col-3">
-          <li class="nav-item active p-0">
-            <a class="nav-link p-0 d-flex" href="#">フォロー</a>
-          </li>
-          <p class="h6">100</p>
-        </ul>
-      </nav>
-      <div class="row">
-        <p class="h5">宮園雄太郎</p>
-      </div>
-      <div class="row">
-        <p>aaaaaa</p>
-      </div>
-      <div class="row">
-        <button class="page_btn edit_btn mx-2">
-          <a>編集する</a>
-        </button>
-      </div>
-    </div>
-  </div>
   <div class="container d-flex p-0 main_contents">
     <!-- pcでのみ表示 -->
     <div class="row d-none d-md-block side_nav_btn"></div>
@@ -193,36 +134,21 @@
     </div>
     <!-- -->
     <div class="row reviews">
-      <div class="row articles d-flex">
-        <article class="col-4 col-md-3 p-0">
-          <section>
-            <p class="h5 mx-2">denimu</p>
-          </section>
-          <div class="review_file_cover">
-            <img src="public/item_img/denim.JPG" class="review_file">
-          </div>
-          </section>
-        </article>
-        <div class="col-1 d-none d-md-block"></div>
-        <article class="col-4 col-md-3 p-0">
-          <section>
-            <p class="h5 mx-2">denimu</p>
-          </section>
-          <div class="review_file_cover">
-            <img src="public/item_img/denim.JPG" class="review_file">
-          </div>
-        </article>
-        <div class="col-1 d-none d-md-block"></div>
-        <article class="col-4 col-md-3 p-0">
-          <section>
-            <p class="h5 mx-2">denimu</p>
-          </section>
-          <div class="review_file_cover">
-            <img src="public/item_img/denim.JPG" class="review_file">
-          </div>
-        </article>
-        <div class="col-1 d-none d-md-block"></div>
+      <div class="row review">
+        <form method="post" action="" class="">
+          <label class="review_files">
+            <p class="h4 mx-4 mt-4">投稿画像</p>
+            <img src="public/ui_img/contribute_btn.png" class="file_btn">
+            <input type="file" name="files" id="review_imgs" accept="image/*" multiple="multiple">
+          </label>
+          <ul id="preview" style="display:none" class="slider post_imgs_area"></ul>
+          <input type="submit" value="次の画面へ" name="submit" class="contribute">
+        </form>
       </div>
+      <div class="row">
+      <a href="index.html" class="d-none d-md-block back">
+        <p>前の画面に戻る</p>
+      </a>
     </div>
   </div>
   </div>

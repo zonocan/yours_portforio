@@ -1,6 +1,6 @@
 /* スライダー */
 .slide-area {
-  border: 2px solid #000;
+  border: 0.5px solid #000;
   display: flex;
   align-items: center;
 }
