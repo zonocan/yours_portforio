@@ -81,10 +81,7 @@ header{
   height: 50px;
 }
 
-.form-control {
-  height: 45px;
-  background-color: #f1f1f1;
-}
+
 
 .nav-link{
   color: #fff;
@@ -119,11 +116,12 @@ header{
 
 .side_nav_cover {
   margin: 100px 10% 100px 0;
+  z-index: 1500;
 }
 
 .reviews {
   width: 55%;
-  margin: 0 5% 0 40%;
+  margin: 0 auto;
 }
 
 .review {

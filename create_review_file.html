@@ -9,9 +9,6 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
-  <!-- 写真のスライドのcss -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <!-- -->
   <link rel="stylesheet" type="text/css" href="public/css/create_review_file.css">
   <link rel="stylesheet" type="text/css" href="public/css/nav.css">
@@ -90,7 +87,7 @@
       </ul>
     </div>
   </header>
-  <div class="container d-flex p-0 main_contents">
+  <div class="container-fluid d-flex p-0 main_contents">
     <!-- pcでのみ表示 -->
     <div class="row d-none d-md-block side_nav_btn"></div>
     <div class="row d-none  d-md-block p-0 side_nav_cover">
@@ -142,7 +139,7 @@
             <input type="file" name="files" id="review_imgs" accept="image/*" multiple="multiple">
           </label>
           <ul id="preview" style="display:none" class="slider post_imgs_area"></ul>
-          <input type="submit" value="次の画面へ" name="submit" class="contribute">
+          <button class="btn contribute mt-4" type="submit">最後の画面に</button>
         </form>
       </div>
       <div class="row">

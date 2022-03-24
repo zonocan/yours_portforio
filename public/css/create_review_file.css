@@ -176,7 +176,7 @@ input[type="file"] {
 
 .back p {
     width: 40%;
-    margin: -70px 24% 0 24%;
+    margin: -70px 24% 0 29%;
     color: #04e3d0;
 }
 
@@ -230,9 +230,6 @@ input[type="file"] {
   .file_btn {
     margin: 120px auto;
   }
-
-
-
 
 }
 

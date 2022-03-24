@@ -1,17 +1,17 @@
 
 $(function() {
-  //
+  //投稿する画像の読み込み
   $('#review_imgs').change(function() {
     if (!this.files.length) {
       return;
     }
 
-    //
+    //投稿する画像を読みんだ時のHTMLの書き換え
     $('#preview').text('');
     var $files = $(this).prop('files');
     var file_length = $files.length;
 
-    //
+    //ループでまわして、画像の読み込み
     for (var i = 0; i < file_length; i++) {
       var file = $files[i];
       var fr = new FileReader();
@@ -27,4 +27,5 @@ $(function() {
     $('#preview').css('display', 'block');
     $('.review_files').css('display', 'none');
   });
+
 });
