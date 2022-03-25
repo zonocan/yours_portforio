@@ -15,7 +15,6 @@
   <link rel="stylesheet" type="text/css" href="public/css/footer.css">
   <!-- 写真のスライドのjs -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <!-- -->
   <script type="text/javascript" src="public/js/nav.js"></script>
   <script type="text/javascript" src="public/js/review_file.js"></script>
@@ -138,8 +137,9 @@
             <img src="public/ui_img/contribute_btn.png" class="file_btn">
             <input type="file" name="files" id="review_imgs" accept="image/*" multiple="multiple">
           </label>
-          <ul id="preview" style="display:none" class="slider post_imgs_area"></ul>
+          <ul id="preview" style="display:none"></ul>
           <button class="btn contribute mt-4" type="submit">最後の画面に</button>
+          <button class="btn contribute mt-4" id="clear">画像を変える</button>
         </form>
       </div>
       <div class="row">

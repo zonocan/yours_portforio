@@ -28,4 +28,16 @@ $(function() {
     $('.review_files').css('display', 'none');
   });
 
+//画像の変更
+  $('#clear').click(
+
+    function() {
+
+      $('#review_imgs').after('<input type="file" name="files" id="review_imgs" accept="image/*" multiple="multiple">');
+      $('#review_imgs').remove();
+      $('#review_imgs_new').attr('id', 'review_imgs')
+
+    }
+  )
+
 });

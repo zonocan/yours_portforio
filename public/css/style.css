@@ -81,8 +81,6 @@ header{
   height: 50px;
 }
 
-
-
 .nav-link{
   color: #fff;
   font-size: 18px;
@@ -129,10 +127,6 @@ header{
   margin: 100px 0 100px 0;
 }
 
-section{
-  height: 50px;
-}
-
 .profeal_file{
   height: 35px;
   border-radius: 50%;
@@ -141,6 +135,10 @@ section{
 .border_line{
   height: 0.5px;
   background-color: black;
+}
+
+.review_item {
+  word-wrap: break-word;
 }
 
 
@@ -193,6 +191,7 @@ section{
 .text_area{
   background-color: #f1f1f1;
   display: none;
+  word-wrap: break-word;
 }
 
 .btn_area{

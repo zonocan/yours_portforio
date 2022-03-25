@@ -119,6 +119,10 @@ header{
   border-radius: 50%;
 }
 
+.intoroduction {
+  word-wrap: break-word;
+}
+
 .page_btn {
   height: 30px;
   width: 12%;
@@ -162,7 +166,6 @@ header{
 }
 
 section{
-  height: 25px;
   border: #000 solid 0.5px;
 }
 
@@ -178,6 +181,11 @@ section{
 
 .review_file {
   width: 100%;
+}
+
+.review_item {
+  word-wrap: break-word;
+  z-index: 2000;
 }
 
 
