@@ -2,14 +2,17 @@
 $(function() {
   //投稿する画像の読み込み
 
-  $('#profeal_file').on('change', function() {
-    var $fr = new FileReader();
+  $('#profeal_file').change(function(e) {
 
-    $fr.onload = function(){
-      $('preview').attr('src', $fr.result);
+    var reader = new FileReader();
+    reader.onload = function (e) {
+      $("#preview").attr('src',e.target.result);
     }
-    $fr.readAsDataURL(this.files[0]);
-  })
 
+    reader.readAsDataURL(e.target.files[0]);
+
+    $('.profeal_file').css('display', 'none');
+    $('#preview').css('display', 'block');
+  })
 
 });

@@ -77,6 +77,11 @@ header{
   height: 50px;
 }
 
+.logo{
+  width: 25%;
+  height: 25px;
+}
+
 
 /* ここまで(ヘッダー) */
 
@@ -113,10 +118,11 @@ header{
 }
 
 #preview {
-  width: 100px;
+  width: 120px;
   height: 100px;
   border-radius: 50%;
 }
+
 
 input[type="file"] {
   display: none;
@@ -154,7 +160,7 @@ input[type="file"] {
 @media(max-width: 768px) {
 
   .logo{
-    width: 50%;
+    width: 40%;
   }
 
   .header_ui_btn{
