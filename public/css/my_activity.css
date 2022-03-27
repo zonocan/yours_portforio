@@ -56,7 +56,8 @@ html {}
 }
 
 /* ヘッダー部分のコーディング */
-header {
+
+header{
   background-color: #000;
   width: 100%;
   height: 50px;
@@ -71,31 +72,41 @@ header {
   clip-path: polygon(-2000% 100%, 17.5% 0%, 82.5% 0%, 100% 100%);
 }
 
+
 .navbar {
   height: 50px;
 }
 
-.nav-link {
+.nav-link{
   color: #fff;
   font-size: 18px;
 }
 
-.btn {
+.btn{
   font-size: 12px;
   font-weight: bold;
   color: #fff;
   background-color: #04e3d0;
 }
 
-.header_ui_btn {
+.header_ui_btn{
   height: 20px;
 }
 
-.header_ui_btn:hover {
+.header_ui_btn:hover{
   opacity: 0.5;
 }
 
+.header_ui {
+  height: 35px;
+}
+
+
+
 /* ここまで(ヘッダー) */
+
+
+
 /* コンテイナー */
 .container {
   margin: 0;
@@ -110,78 +121,58 @@ header {
 }
 
 .reviews {
-  width: 60%;
-  margin: 0px 5% 0 30%;
+  width: 40%;
+  margin: 0 auto;
 }
 
 .review {
   margin: 100px 0 100px 0;
 }
 
-.profeal_file {
+
+.profeal_file{
   height: 35px;
   border-radius: 50%;
 }
 
 /**/
-.review_files {
-  width: 100%;
-  height: 450px;
-  background-color: black;
-}
+
 
 .review {
-  width: 70%;
+  width: 100%;
   margin: 100 auto;
 }
 
-input[type="file"] {
-  display: none;
+
+.follow_btn {
+  width: 100%;
+  background-color: #04e3d0;
+  color: white;
+  white-space: nowrap;
+  font-weight: bold;
+  border: none;
+  border-radius: 5%;
 }
 
-.h4 {
+.user_name {
   color: #fff;
 }
 
-.file_btn {
-  margin: 160px auto;
-}
-
-#preview img {
-  margin: 0 auto;
-  max-width: 100%;
-  margin-bottom: 20px;
-}
-
-.contribute {
+.review_img {
   width: 50%;
-  height: 35px;
-  background-color: #90000e;
-  font-size: 20px;
-  color: white;
-  margin-top: 30px;
-  margin-left: 25%;
-  border: none;
-  border-radius: 50px 50px 50px 50px;
+  max-height: 35px;
 }
 
-.back p {
-  width: 40%;
-  margin: -70px 24% 0 29%;
-  color: #04e3d0;
-}
 
-.back p:hover {
-  color: #90000e;
-}
 
 /* ヘッダー部分のコーディング */
 @media(max-width: 768px) {
-  .logo {
+
+  .logo{
     width: 50%;
   }
 
-  .header_ui_btn {
+  .header_ui_btn{
     height: 17px;
   }
 
@@ -193,28 +184,12 @@ input[type="file"] {
     opacity: 0.5;
   }
 
+  .header_ui {
+    height: 28px;
+  }
+
   .left_side {
     clip-path: polygon(100% 0%, 0% 0%, 20% 100%, 80% 100%);
-  }
-
-  #register_btn {
-    background-color: #000;
-    font-size: 20px;
-    color: #fff;
-    border: none;
-  }
-
-  #register_btn:hover {
-    opacity: 0.5;
-  }
-
-  #register_btn.isActive {
-    color: #90000e;
-  }
-
-
-  .user_name {
-    margin: auto;
   }
 
   .user {
@@ -227,40 +202,53 @@ input[type="file"] {
     width: 100%;
   }
 
+  .h3 {
+    color: #000;
+  }
+
+
+
 }
 
 /* タブレッドの表示 */
-@media (max-width: 768px) {
-  .page_btn {
-    width: 25%;
-    border-radius: 5%;
-    margin: 20px 0 20px 0;
-  }
+@media (max-width: 768px){
 
-  .reviews {
-    width: 90%;
-    margin: 20px auto;
-  }
 
-  .review_files {
+  .reviews{
     width: 100%;
-    height: 350px;
-    background-color: black;
-  }
-
-  .file_btn {
-    margin: 120px auto;
-  }
-}
-
-/* スマホの表示 */
-@media (max-width: 600px) {
-  .reviews {
-    width: 90%;
-    margin: 20px auto;
+    margin: 0;
   }
 
   .review {
+    margin-top: 50px;
+  }
+
+  .h1 {
+    font-weight: bold;
+  }
+
+  .follow_btn {
+    width: 100%;
+    background-color: #04e3d0;
+    color: white;
+    font-weight: bold;
+    white-space: nowrap
+    border: none;
+    border-radius: 5%;
+  }
+
+}
+
+/* スマホの表示 */
+@media (max-width: 600px){
+
+
+  .reviews{
     width: 100%;
   }
+
+  .review{
+    width: 100%;
+  }
+
 }

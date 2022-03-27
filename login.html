@@ -10,12 +10,11 @@
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css">
   <!-- -->
-  <link rel="stylesheet" type="text/css" href="public/css/create_acount.css">
+  <link rel="stylesheet" type="text/css" href="public/css/login.css">
   <!-- 写真のスライドのjs -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!-- -->
-  <script type="text/javascript" src="public/js/profeal_file.js"></script>
-  <script type="text/javascript" src="public/js/create_acount.js"></script>
+  <script type="text/javascript" src="public/js/login.js"></script>
 </head>
 
 <body>
@@ -26,13 +25,13 @@
       </div>
       <div class="col-3 d-none d-md-block"></div>
       <div class="col-3 d-none d-md-block">
-        <p class="h2 mt-1"> ~ welcome ~</p>
+        <p class="h2 mt-1"> ~ お帰りなさい ~</p>
       </div>
       <!-- スマホ -->
       <div class="col-2 d-md-none d-block"></div>
       <div class="col-5 d-md-none d-block">
         <button class="p-2" id="register_btn" type="submit">
-          <strong class="mx-3">登録する</strong>
+          <strong class="mx-3">ログイン</strong>
         </button>
       </div>
     </div>
@@ -41,19 +40,7 @@
     <!-- -->
     <div class="row reviews">
       <div class="row review">
-        <form method="post" action="" class="" id="create_acount_form">
-          <div class="row">
-            <p class="h6">プロフィール写真</p>
-            <label class="profeal_file mx-1">
-              <img src="public/ui_img/no_img.png" id="no_img">
-              <input type="file" name="image1" id="profeal_file" accept="image/*">
-            </label>
-            <!-- プロフィール写真の表示 -->
-            <img id="preview" style="display:none">
-          </div>
-          <div class="row">
-            <button class="mt-3" id="crear" style="display:none">写真をクリア</button>
-          </div>
+        <form method="post" action="" class="" id="login_form">
           <div class="row mt-4">
             <label class="form-label">アカウント名</label>
             <div class="input-group">
@@ -67,24 +54,12 @@
             </div>
           </div>
           <div class="row mt-4">
-            <label class="form-label">メールアドレス</label>
-            <div class="input-group">
-              <input name="email" type="text" class="form-control" id="email">
-            </div>
-          </div>
-          <div class="row mt-4">
             <label class="form-label">パスワード</label>
             <div class="input-group">
               <input name="password" type="text" class="form-control" id="password">
             </div>
           </div>
-          <div class="row mt-4">
-            <label class="form-label">自己紹介</label>
-            <div class="input-group">
-              <textarea class="form-control" id="text"></textarea>
-            </div>
-          </div>
-          <button class="btn d-none d-md-block contribute mt-4" type="submit">登録する</button>
+          <button class="btn d-none d-md-block contribute mt-4" type="submit">ログイン</button>
         </form>
       </div>
     </div>

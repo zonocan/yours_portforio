@@ -13,6 +13,18 @@ $(function() {
 
     $('.profeal_file').css('display', 'none');
     $('#preview').css('display', 'block');
+    $('#crear').css('display', 'block');
   })
+
+  //画像の変更
+
+  $('#clear').click(
+
+    function() {
+      $('#profeal_file').after('<input type="file" name="image1" id="profeal_file" accept="image/*">');
+      $('#profeal_file').remove();
+      $('#profeal_file_new').attr('id', 'profeal_file_new')
+    }
+  )
 
 });

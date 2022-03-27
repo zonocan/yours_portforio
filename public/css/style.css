@@ -243,6 +243,11 @@ header{
     margin: 20px auto;
   }
 
+  .review {
+    border: solid 1px black;
+    margin: 50px 0 50px 0;
+  }
+
   .display_btn{
     width: 40%;
   }

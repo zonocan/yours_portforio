@@ -110,7 +110,8 @@ header{
   margin: 100 auto;
 }
 
-.profeal_file {
+
+#no_img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -123,12 +124,21 @@ header{
   border-radius: 50%;
 }
 
+#crear {
+  width: 50%;
+  background-color: #04e3d0;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5%;
+  margin:20px 0 20px 0;
+}
 
 input[type="file"] {
   display: none;
 }
 
-.h4 {
+.h2 {
   color: #fff;
 }
 
@@ -175,6 +185,31 @@ input[type="file"] {
   .review_file {
     height: 150px;
     width: 100%;
+  }
+
+  #crear {
+    width: 35%;
+    background-color: #90000e;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5%;
+    margin:20px 0 20px 0;
+  }
+
+  #register_btn {
+    background-color: #000;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+  }
+
+  #register_btn:hover {
+    opacity: 0.5;
+  }
+
+  #register_btn.isActive {
+    color: #90000e;
   }
 
 }
