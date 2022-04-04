@@ -156,14 +156,9 @@ input[type="file"] {
   border-radius: 50px 50px 50px 50px;
 }
 
-.back p {
-    width: 40%;
-    margin: -70px 10% 0 7%;
-    color: #04e3d0;
-}
-
-.back p:hover {
-  color: #90000e;
+.new_register_link {
+  font-size: 20px;
+  color: #04e3d0;
 }
 
 /* ヘッダー部分のコーディング */
