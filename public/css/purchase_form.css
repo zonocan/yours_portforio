@@ -122,18 +122,6 @@ header {
 /* コンテイナー */
 .container-fluid {
   margin: 0;
-  display:-webkit-box;
-display:-moz-box;
-display:-ms-flexbox;
-display:-webkit-flex;
-display:-moz-flex;
-display:flex;
--webkit-box-lines:multiple;
--moz-box-lines:multiple;
--webkit-flex-wrap:wrap;
--moz-flex-wrap:wrap;
--ms-flex-wrap:wrap;
-flex-wrap:wrap;
 }
 
 .side_nav_btn {
@@ -147,12 +135,15 @@ flex-wrap:wrap;
 
 .reviews {
   width: 95%;
+  display: flex;
   margin: 50 auto;
+  align-items: stretch;
 }
 
 .review {
-  width: 40%;
-  margin: 100px 0 0 13%;
+  width: 50%;
+  margin: 100px 0 0 5%;
+  border: 0.5px solid #000;
 }
 
 .profeal_file {
@@ -248,21 +239,28 @@ flex-wrap:wrap;
 
 /*pcのみの表示 */
 .acount_info {
-  border: 1px solid #000;
+  border-bottom: 1px solid #000;
 }
 
 .review_item_info {
   width: 40%;
   margin-top: 100px;
+  border: 0.5px solid #000;
+  border-left: none;
 }
 
 .purchase_form {
-  border: 0.5px solid #000;
+  border-bottom: 0.5px solid #000;
+}
+
+.item_categories_info {
+  border-bottom: 0.5px solid #000;
 }
 
 .purchase_btn {
-  width: 40%;
+  width: 30%;
   height: 35px;
+  font-size: 17px;
   background-color: #90000e;
   color: white;
   margin-top: 30px;
@@ -270,25 +268,18 @@ flex-wrap:wrap;
   border-radius: 50px 50px 50px 50px;
 }
 
-.item_categories_info {
-  border: 1px solid #000;
+.back_btn {
+  color: #04e3d0;
+  font-size: 20px;
 }
 
-.item_text_section_cover {
- background-color: #f1f1f1;
-}
 
 .item_text_section {
   width: 100%;
 }
 
-.text_title {
-  height: 15px;
-}
 
-.border_line {
-  height: 0.5px;
-}
+
 
 /**/
 /* ヘッダー部分のコーディング */

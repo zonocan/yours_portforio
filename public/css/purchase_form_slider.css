@@ -23,9 +23,6 @@
 }
 
 /**/
-.slick-dots {
-  border-bottom: 1px solid black;
-}
 
 .slick-next:before {
   content: '▶︎▶︎';
