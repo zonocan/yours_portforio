@@ -93,40 +93,27 @@ header{
   margin-top: 250px
 }
 
-.h2 {
-  font-family:Osaka;
+.main {
+  width: 55%;
+  margin: 100px auto;
+}
+
+.cover {
+  width: 100%;
+  border: 0.5px solid #000;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.h5 {
+  font-family:Arial;
   color: #256058;
-  font-size: 60px;
   text-align: center;
 }
 
-#click {
-  width: 30%;
-  border: none;
-  background-color: #c9f7f3;
-  color: #318176;
-  font-family: Arial Rounded MT Bold;
-  font-size: 20px;
-  margin: 80px 0 0 10%;
-}
-
-#click:hover {
-  opacity: 0.5;
-}
-
-.introduction {
-  width: 60%;
-  margin: 50px auto;
-  display: none;
-}
-
-.h3 {
-  font-family: Osaka;
-  color: #318176;
-}
-
-.introduction p{
-  font-family: Osaka;
+.h4 {
+  font-family:Arial;
+  color: #256058;
 }
 
 .top {
@@ -135,12 +122,11 @@ header{
   color: #318176;
 }
 
-.line {
-  height: 1px;
-  background-color: #318176;
-  margin: 50px 0 100px 0;
-  display: none;
+.top:hover {
+  opacity: 0.5;
+  color: #318176;
 }
+
 
 
 /* ヘッダー部分のコーディング */
@@ -156,6 +142,11 @@ header{
 
 /* タブレッドの表示 */
 @media (max-width: 768px){
+
+  .main {
+    width: 90%;
+    margin: 100px auto;
+  }
 
   .dropdown-item {
       display: block;
