@@ -94,13 +94,13 @@ header{
 }
 
 .h2 {
-  font-family:Osaka;
+  font-family:Arial Rounded MT Bold;
   color: #256058;
   font-size: 60px;
   text-align: center;
 }
 
-#click {
+.buttons {
   width: 30%;
   border: none;
   background-color: #c9f7f3;
@@ -110,7 +110,15 @@ header{
   margin: 80px 0 0 10%;
 }
 
-#click:hover {
+#profile:hover {
+  opacity: 0.5;
+}
+
+#strong_point:hover {
+  opacity: 0.5;
+}
+
+#carrier:hover {
   opacity: 0.5;
 }
 
@@ -169,6 +177,10 @@ header{
       white-space: nowrap;
       background-color: transparent;
       border: 0;
+  }
+
+  .h2 {
+    font-size: 40px;
   }
 
 }

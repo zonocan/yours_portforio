@@ -1,26 +1,32 @@
 
-//投稿内容の表示
+//
 
 $(function() {
 
-  $('#click').on('click', function() {
+//プロフィールの表示
+
+  $('#profile').on('click', function() {
 
     $('.introduction').toggle('slow', alertFunc);
 
     $('.line').toggle('slow', alertFunc);
-    
+
   });
+
+//プロフィールボタンのテキストの変更
 
   function alertFunc() {
 
     if ($(this).css('display') == 'none') {
 
-      $("#click").text("CLICK ▶︎");
+      $("#profile").text("PROFILE ▶︎");
 
     } else {
 
-      $("#click").text("CLOSE ×");
+      $("#profile").text("CLOSE ×");
 
     }
   };
+
+  
 });
