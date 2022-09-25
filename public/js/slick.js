@@ -7,5 +7,6 @@ $(document).on('ready', function() {
     cssEase: "linear",
     swipe: false, // 操作による切り替えはさせない
     arrows: false,
+    fade: true,
   });
 });

@@ -2,7 +2,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>ABOUT</title>
+  <title>Your's</title>
   <!-- レスポンシブデザイン -->
   <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -26,27 +26,33 @@
       <div class="logo_area col-6">
           <img src="public/logo/logo.png" id="header_logo">
       </div>
-      <div class="nav_link_area col-6">
+      <div class="nav_link_area col-6 ">
           <ul class="header_nav_links navbar nav">
-            <!-- ヘッダーのナビリンク-->
-              <li class="header_nav_link nav-item active">
+            <!-- ヘッダーのナビリンク PC 画面-->
+              <li class="header_nav_link nav-item active d-none d-md-block">
                   <a class="nav-link" href="#">TOP</a>
               </li>
-              <li class="header_nav_link nav-item active">
+              <li class="header_nav_link nav-item active d-none d-md-block">
                   <a class="nav-link" href="#">ABOUT</a>
               </li>
-              <li class="header_nav_link nav-item active">
+              <li class="header_nav_link nav-item active d-none d-md-block">
                   <a class="nav-link" href="#">SERVISE</a>
               </li>
-              <li class="header_nav_link nav-item active">
+              <li class="header_nav_link nav-item active d-none d-md-block">
                   <a class="nav-link" href="#">REVIEW</a>
               </li>
             <!-- ヘッダーのナビリンク-->
           </ul>
           <button class="header_apply_btn btn contribute">
-            <a>APPLY</a>
-            <img src="public/btn_arrow/header_btn_arrow.png" class="header_btn_arrow">
+              <a>APPLY</a>
+              <img src="public/btn_arrow/header_btn_arrow.png" class="header_btn_arrow">
           </button>
+          <!-- スマホ画面時のバーガーメニュー　-->
+          <div class="d-md-none d-block">
+              <button class="btn humberger_menu">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+          </div>
       </div>
   </header>
   <div class="container-fluid p-0">
@@ -84,6 +90,11 @@
       <div class="block about row p-0">
           <div class="background-left about_background_left p-0">
               <p class="h1 about_h1">ABOUT</p>
+              <!-- スマホ画面時のメイン画面 -->
+              <div class="phone_main_img d-md-none d-block">
+                 <img src="public/display_img/about_phone_img.png">
+              </div>
+              <!-- -->
               <div class="about_outer">
                   <div class="h2_outer">
                     <p class="h2">あなたらしさとは？</p>
@@ -104,7 +115,7 @@
           <div class="about_main_img">
               <img src="public/display_img/display_img_1.png">
           </div>
-          <div class="background-right about_background_right"></div>
+          <div class="background-right about_background_right d-none d-md-block"></div>
       </div>
       <div class="block servise row m-0">
           <p class="service_h1">SERVISE</p>
